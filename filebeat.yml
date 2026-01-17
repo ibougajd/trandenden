@@ -1,0 +1,7 @@
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      hints.enabled: true # Automatically finds your other containers
+
+output.elasticsearch:
+  hosts: ["elk-elasticsearch-1:9200"] # Match your service name
